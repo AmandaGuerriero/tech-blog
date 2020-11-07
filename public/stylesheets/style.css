@@ -1,0 +1,114 @@
+/* Global Styles Start */
+:root {
+    --teal-blue: #64a6bd;
+    --pink-purple: #D7B9D5;
+    --pink: #F4CAE0;
+    --primary-text-color: #ffffff;
+    --section-header: #1c2e4a;
+    --black-rgb: 0, 0, 0;
+    --white-rgb: 255, 255, 255;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--pink-purple);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+/* Global Styles End */
+
+/* Header Styles Start */
+header {
+    background: var(--teal-blue);
+    position: sticky;
+    position: -webkit-sticky; /* For Safari Browsers */
+    z-index: 9999;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 a {
+    font-size: 35px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    text-shadow: 0 2px 10px rgba(var(--black-rgb), 0.5);
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 5px 20px;
+    text-decoration: underline;
+}
+
+header nav ul li:hover {
+    font-weight: bold;
+    background-color: var(--pink-purple);
+    border-radius: 25%;
+    padding: 5px 10px;
+}
+/* Header Styles End */
+
+/* Footer Styles Start */
+footer {
+    background: var(--teal-blue);
+    display: flex;
+    background-size: cover;
+    padding: 20px 15px;
+    margin-top: 20px;
+    text-align: right;
+    color: var(--primary-text-color);
+    display: block;
+    font-weight: lighter;
+    text-align: right;
+}
+/* Footer Styles End */
+
+/* Media Queries */
+/* MQ for screens smaller that 980px */
+@media screen and (max-width: 980px) {
+    header {
+        position: unset;
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+  
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 1vw;
+    }
+  
+    header nav {
+        justify-content: center;
+        margin: 0;
+    }
+    
+    header nav ul {
+        padding: 0px 0px;
+    }
+}
